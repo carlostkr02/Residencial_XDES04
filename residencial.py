@@ -5,7 +5,7 @@ import time
 from selenium.webdriver.common.alert import Alert
 
 # Caminho do arquivo HTML
-caminho_arquivo = 'C:\\Users\\carlosvinicius\\Documents\\carlos v\\htmlcod.html'
+caminho_arquivo = '/home/joao/Downloads/htmlcod.html'
 
 # Configuração do WebDriver do Firefox
 service = Service('/snap/bin/geckodriver')  # Substitua pelo caminho correto para o geckodriver
