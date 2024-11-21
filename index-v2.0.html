@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Documentos e Manutenções</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra de navegação lateral -->
+        <aside class="sidebar">
+            <h2>Navegação</h2>
+            <ul>
+                <li><a href="#" onclick="showPage('inicio')">Início</a></li>
+                <li><a href="#" onclick="showPage('documentos')">Documentos</a></li>
+                <li><a href="#" onclick="showPage('manutencoes')">Manutenções</a></li>
+            </ul>
+        </aside>
+
+        <!-- Área principal -->
+        <main class="main-content">
+            <section id="inicio" class="content-section active">
+                <h1>Bem-vindo ao Sistema do Residencial Village Inn!</h1>
+                <p>Selecione uma opção na barra de navegação para começar.</p>
+            </section>
+            
+            <section id="documentos" class="content-section">
+                <h1>Gestão de Documentos</h1>
+                <button onclick="showCrud('cadastrarDocumento')">Cadastrar Documento</button>
+                <button onclick="showCrud('consultarDocumento')">Consultar Documentos</button>
+                <button onclick="showCrud('atualizarDocumento')">Atualizar Documento</button>
+                <button onclick="showCrud('removerDocumento')">Remover Documento</button>
+                <div id="crudDocumentos" class="crud-container"></div>
+            </section>
+            
+            <section id="manutencoes" class="content-section">
+                <h1>Gestão de Manutenções</h1>
+                <button onclick="showCrud('cadastrarManutencao')">Cadastrar Manutenção</button>
+                <button onclick="showCrud('consultarManutencao')">Consultar Manutenções</button>
+                <button onclick="showCrud('alterarManutencao')">Alterar Manutenção</button>
+                <button onclick="showCrud('excluirManutencao')">Excluir Manutenção</button>
+                <div id="crudManutencoes" class="crud-container"></div>
+            </section>
+            
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
